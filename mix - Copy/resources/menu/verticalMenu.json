@@ -1,0 +1,35 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard"
+    },
+    {
+      "name": "User",
+      "icon": "menu-icon tf-icons bx bx-user",
+      "slug": "auth",
+      "submenu": [
+        {
+          "url": "auth/login-basic",
+          "name": "Login",
+          "slug": "auth-login-basic",
+          "target": "_blank"
+        },
+        {
+          "url": "auth/register-basic",
+          "name": "Register",
+          "slug": "auth-register-basic",
+          "target": "_blank"
+        },
+        {
+          "url": "auth/forgot-password-basic",
+          "name": "Forgot Password",
+          "slug": "auth-forgot-password-basic",
+          "target": "_blank"
+        }
+      ]
+    }
+  ]
+}
