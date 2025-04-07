@@ -12,19 +12,17 @@ use Illuminate\Support\Facades\Log;
 
 class LoginBasic extends Controller
 {
-  // Show the login page
+  
   public function index()
   {
     return view('content.authentications.auth-login-basic');
   }
 
-  // Redirect to Google for authentication
   public function redirectToGoogle()
   {
     return Socialite::driver('google')->redirect();
   }
 
-  // Handle the Google callback and log the user in
   public function handleGoogleCallback()
   {
     try {
